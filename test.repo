@@ -1,8 +1,16 @@
 [test-repo]
 name = Test Repo
 #baseurl = https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/$basearch/baseos/os
-baseurl = https://localhost:8443/
+baseurl = http://100.115.92.198:8081/pkg
 enabled = 1
 # gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+gpgcheck = 0
+
+[test-repo-source]
+name = Test Repo (Source RPMs) 
+#baseurl = https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/$basearch/baseos/source/SRPMS
+baseurl = http://100.115.92.198:8081/source
+enabled = 0
+#gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
 gpgcheck = 0
 
