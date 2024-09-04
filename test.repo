@@ -1,7 +1,7 @@
 [test-repo]
 name = Test Repo
 #baseurl = https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/$basearch/baseos/os
-baseurl = http://localhost:8081/pkg
+baseurl = http://100.115.92.198:8081/pkg
 enabled = 1
 # gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
 gpgcheck = 0
