@@ -15,4 +15,4 @@ podman run -v $(pwd):$(pwd) \
   $(pwd)/rpms.in.yaml
 
 Run just this test with:
-tox -e integration -- tests/integration/test_rpm.py::test_rpm_packages[rpm_cert_auth]
+CACHI2_TEST_LOCAL_DNF_SERVER=true tox -e integration -- tests/integration/test_rpm.py::test_rpm_packages[rpm_cert_auth]
